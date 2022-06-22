@@ -11,7 +11,7 @@ mongoose.connect("mongodb+srv://maifizumaretiya:maifiz9292@cluster0.u9ppw.mongod
     app.use(express.json())
     app.use('/api',router)
 
-    app.listen(3000,()=>{
+    app.listen(process.env.POST,()=>{
         console.log("Server Started");
     })
 }).catch((err)=>{
